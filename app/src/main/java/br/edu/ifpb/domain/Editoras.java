@@ -14,4 +14,5 @@ public interface Editoras {
     public List<Editora> porLocalDeOrigem(String localDeOrigem);
 
     public void nova(Editora editora);
+
 }

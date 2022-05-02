@@ -12,7 +12,7 @@
 </head>
 <body>
     <div align="center">
-        <form method="POST" action="editoras.do">
+        <form method="POST" action="editoras.criar.do">
             <label>Local de Origem: 
                 <input type="text" id="localDeOrigem" name="localDeOrigem"/> 
             </label>

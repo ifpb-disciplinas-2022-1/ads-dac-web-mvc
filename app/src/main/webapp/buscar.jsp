@@ -15,7 +15,7 @@
 </head>
 <body>
     <div align="center">
-        <form method="POST" action="buscar.jsp">
+        <form method="GET" action="editoras.buscar.do">
             <label>Local de Origem: 
                 <input type="text" id="localDeOrigem" name="localDeOrigem"/> 
             </label>
@@ -23,15 +23,15 @@
         </form>
         
         <br/>
-        <%
-            EditorasEmJDBC editoras = new EditorasEmJDBC();
-            Object atributo = request.getAttribute("localDeOrigem");
-            
-            if(atributo==null)
-                request.setAttribute("editoras",editoras.todas());
-            else
-                request.setAttribute("editoras",editoras.todas());
-        %>
+<%--        <%--%>
+<%--            EditorasEmJDBC editoras = new EditorasEmJDBC();--%>
+<%--            Object atributo = request.getAttribute("localDeOrigem");--%>
+
+<%--            if(atributo==null)--%>
+<%--                request.setAttribute("editoras",editoras.todas());--%>
+<%--            else--%>
+<%--                request.setAttribute("editoras",editoras.todas());--%>
+<%--        %>--%>
         <%@ include file="listar.jsp" %>
 
     </div>
